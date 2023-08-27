@@ -3,36 +3,63 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-  background-color: #b8af61;
+  background: #445069;
   font-family: "Quicksand", sans-serif;
 }
+
 .container {
-  width: 70%;
-  margin: auto;
-  text-align: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border-radius: 6px;
+  background-color: #eee;
 }
+
 .dice {
-  display: inline-block;
+  width: 50%;
   border-radius: 30px;
   border-color: #1b0d1c;
+  text-align: center;
+  position: relative;
+}
+
+.dice-app{
+  display: flex;
 }
 
 h1 {
-
   text-align: center;
-  text-shadow: 5px 0 #6f6f6f;
-  font-size: 8rem;
-  color: #eddcef;
-}
-
-p {
-  font-size: 2rem;
-  color: #1b0d1c;
+  text-shadow: 5px 0 #dbcf21;
+  font-size: 5rem;
+  color: #176fa9;
 }
 
 img {
   width: 40%;
+  margin: 20px;
+}
+
+p{
+  margin: 10px;
+  font-size: 2rem;
+}
+button {
+  width: 25%;
+  margin-top: 20px;
+  background-color: #176fa9;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+button:hover{
+  cursor: pointer;
 }
