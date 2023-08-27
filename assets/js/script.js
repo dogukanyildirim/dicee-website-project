@@ -9,4 +9,12 @@ roll_btn.addEventListener("click", function () {
   let random_img_src_2 = "./assets/images/" + random_number_2 + ".png";
   img_1.setAttribute("src", random_img_src_1);
   img_2.setAttribute("src", random_img_src_2);
+
+  if (random_number_1 > random_number_2) {
+    document.querySelector("h1").innerHTML = "player 1 wins!";
+  } else if (random_number_1 < random_number_2) {
+    document.querySelector("h1").innerHTML = "player 2 wins!";
+  } else {
+    document.querySelector("h1").innerHTML = "draw!";
+  }
 });
